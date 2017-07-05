@@ -1,2 +1,2 @@
-# Matches foreman_plugin_template.gemspec
-_('TODO: Description of ForemanPluginTemplate.')
+# Matches custom_tab.gemspec
+_('TODO: Description of CustomTab.')
