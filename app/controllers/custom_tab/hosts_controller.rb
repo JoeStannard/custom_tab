@@ -3,9 +3,12 @@ module CustomTab
   class HostsController < ::HostsController
     # change layout if needed
     # layout 'custom_tab/layouts/new_layout'
-
-    def new_action
-      # automatically renders view/custom_tab/hosts/new_action
+    
+    def summary
+      render :partial => 'summary', :locals => { :host => @host }
+      rescue ActionView::Template::Error => exception
+      process_ajax_error exception, 'fetch interfaces information'
     end
+    
   end
 end
