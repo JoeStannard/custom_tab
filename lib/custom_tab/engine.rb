@@ -1,3 +1,7 @@
+require 'deface'
+require 'custom_tab'
+require 'deface'
+
 module CustomTab
   class Engine < ::Rails::Engine
     engine_name 'custom_tab'
